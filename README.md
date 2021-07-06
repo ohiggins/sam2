@@ -9,6 +9,7 @@ ML Platform for Vision and speech.
 RPI3/4 Based. Python
 
 MG996R Servos
+Battery
 
 MPU
 
