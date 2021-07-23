@@ -17,3 +17,9 @@ Camera
 Microphone
 Audio out
 ?GPS
+
+BOM
+| Item     | Description | qty|Cost link|
+| ----------- | ----------- |-------|-----|
+| Header      | Title       | Title       |Title       |
+| Paragraph   | Text        |Title       |Title       |
