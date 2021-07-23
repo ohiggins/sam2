@@ -23,4 +23,7 @@ BOM
 |-------------|-------------|---|-----|-----|----------------------------------------------|
 | MG996r Servo| servo       |18 |10   | $180|http://www.google.com                              |
 | 32 CH servo controller   | For control of all servos        |1 |AU $21.73  |21.73 |https://bit.ly/3iHPkEH|
-|X|X|X|X|X|
+|X|X|X|X|X|X|
+|X|X|X|X|X|X|
+|X|X|X|X|X|X|
+|X|X|X|X|X|X|
