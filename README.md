@@ -18,6 +18,12 @@ Microphone
 Audio out
 ?GPS
 
+## Phase 1
+Get Hexpod built and functioning usoing Arduino hardware
+
+## Phase 2
+Use RPI for ML/AI
+
 BOM
 | Item        | Description |qty|Cost |total|link                                               |
 |-------------|-------------|---|-----|-----|----------------------------------------------|
