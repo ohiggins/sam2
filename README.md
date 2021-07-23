@@ -19,6 +19,11 @@ Audio out
 ?GPS
 
 BOM
-| Item     | Description | qty|Cost| link|
+| Item     | Description | qty|Cost|link|
 | MG996r Servo| servo    | 18 |10  |http://www.google.com|
 | Paragraph   | Text     |99  |$5|sdfds|
+
+| Syntax      | Description |
+| ----------- | ----------- |
+| Header      | Title       |
+| Paragraph   | Text        |
