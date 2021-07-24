@@ -22,7 +22,7 @@ Audio out
 Get Hexpod built and functioning usoing Arduino hardware
 
 ## Phase 2
-Use RPI for ML/AI
+Use RPI for ML/AI. Communicate via wifi to wemos/node mcu
 
 BOM
 | Item        | Description |qty|Cost |total|link                                               |
