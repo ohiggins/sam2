@@ -18,6 +18,7 @@ Microphone
 Audio out
 ?GPS
 Cool led sequence. Use adafruit ring or similar strips
+add mpu6050 for oriteation and knock sensing. (maybe mke the robot, balnce itself if move, like a gimbal)
 
 ## Phase 1
 Get Hexpod built and functioning usoing Arduino hardware
