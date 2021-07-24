@@ -17,6 +17,7 @@ Camera
 Microphone
 Audio out
 ?GPS
+Cool led sequence. Use adafruit ring or similar strips
 
 ## Phase 1
 Get Hexpod built and functioning usoing Arduino hardware
