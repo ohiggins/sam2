@@ -1,6 +1,7 @@
-# SAM V2.0
+# Roku Hexapod
 
 Version 2 of the SAM Robot.
+Rename Roku (Japanese for Six)
 
 Project Goals
 Open Hardware Framework for a quadaped
