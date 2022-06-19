@@ -1,1 +1,17 @@
-Test
+ohiggins@elitebook:~$ cd ServoController_Linux_3.5.6_X64
+bash: cd: ServoController_Linux_3.5.6_X64: No such file or directory
+ohiggins@elitebook:~$ cd Downloads
+ohiggins@elitebook:~/Downloads$ cd ServoController_Linux_3.5.6_X64
+ohiggins@elitebook:~/Downloads/ServoController_Linux_3.5.6_X64$ ls
+ handbook   Release_notes.txt   Software  'Source code'
+ohiggins@elitebook:~/Downloads/ServoController_Linux_3.5.6_X64$ cd Software
+ohiggins@elitebook:~/Downloads/ServoController_Linux_3.5.6_X64/Software$ ls
+ Android  'Fritzing Library'   ServoController
+ohiggins@elitebook:~/Downloads/ServoController_Linux_3.5.6_X64/Software$ cd ServoController
+ohiggins@elitebook:~/Downloads/ServoController_Linux_3.5.6_X64/Software/ServoController$ ls
+99-rtrobot-servocontroller.rules  lib  Readme.txt  share  start.sh
+ohiggins@elitebook:~/Downloads/ServoController_Linux_3.5.6_X64/Software/ServoController$ chmod u+x start.sh
+ohiggins@elitebook:~/Downloads/ServoController_Linux_3.5.6_X64/Software/ServoController$ ./start.sh
+^C
+ohiggins@elitebook:~/Downloads/ServoController_Linux_3.5.6_X64/Software/ServoController$ 
+
