@@ -18,10 +18,18 @@ args = vars(ap.parse_args())
 # define the lower and upper boundaries of the "green"
 # ball in the HSV color space, then initialize the
 # list of tracked points
-# greenLower = (29, 86, 6)
-# greenUpper = (64, 255, 255)
-greenLower = (69, 26, 182)
-greenUpper = (108, 186, 255)
+#green
+# colorLower = (29, 86, 6)
+# colorUpper = (64, 255, 255)
+#Blue
+#colorLower = (69, 26, 182)
+#colorUpper = (108, 186, 255)
+#pink ball
+#colorLower = (104,111,154)
+#colorUpper = (179,167,217)
+#tennis ball
+colorLower = (23,31,80)
+colorUpper = (61,134,198)
 pts = deque(maxlen=args["buffer"])
 
 # if a video path was not supplied, grab the reference
@@ -58,7 +66,7 @@ while True:
     # construct a mask for the color "green", then perform
     # a series of dilations and erosions to remove any small
     # blobs left in the mask
-    mask = cv2.inRange(hsv, greenLower, greenUpper)
+    mask = cv2.inRange(hsv, colorLower, colorUpper)
     mask = cv2.erode(mask, None, iterations=2)
     mask = cv2.dilate(mask, None, iterations=2)
      
@@ -87,22 +95,22 @@ while True:
             cv2.circle(frame, (int(x), int(y)), int(radius),
 				(0, 255, 255), 2)
             cv2.circle(frame, center, 5, (0, 0, 255), -1)
-            print("x: "+x+" y: "+y+" r: "+radius)
+            print("x: "+str(x)+" y: "+str(y)+" r: "+str(radius))
             
 	# update the points queue
     pts.appendleft(center)
     
-    # loop over the set of tracked points
-    for i in range(1, len(pts)):
-		# if either of the tracked points are None, ignore
-		# them
-        if pts[i - 1] is None or pts[i] is None:
-            continue
+#     # loop over the set of tracked points
+#     for i in range(1, len(pts)):
+# 		# if either of the tracked points are None, ignore
+# 		# them
+#         if pts[i - 1] is None or pts[i] is None:
+#             continue
         
-		# otherwise, compute the thickness of the line and
-		# draw the connecting lines
-        thickness = int(np.sqrt(args["buffer"] / float(i + 1)) * 2.5)
-        cv2.line(frame, pts[i - 1], pts[i], (0, 0, 255), thickness)
+# 		# otherwise, compute the thickness of the line and
+# 		# draw the connecting lines
+#         thickness = int(np.sqrt(args["buffer"] / float(i + 1)) * 2.5)
+#         cv2.line(frame, pts[i - 1], pts[i], (0, 0, 255), thickness)
         
 	# show the frame to our screen
     cv2.imshow("Frame", frame)
